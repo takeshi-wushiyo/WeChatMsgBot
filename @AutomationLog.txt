@@ -1,0 +1,4 @@
+2023-07-25 20:16:21.497 wxauto.py[185] ChatWith -> Find Control Timeout(10s): {ClassName: 'WeChatMainWndForPC', ControlType: WindowControl}
+2023-07-29 11:13:07.040 wxauto.py[185] ChatWith -> Find Control Timeout(10s): {ClassName: 'WeChatMainWndForPC', ControlType: WindowControl}
+2023-07-29 11:13:38.122 wxauto.py[185] ChatWith -> Find Control Timeout(10s): {ClassName: 'WeChatMainWndForPC', ControlType: WindowControl}
+2023-07-29 11:14:00.119 wxauto.py[158] GetSessionList -> Find Control Timeout(10s): {ControlType: ListItemControl}
