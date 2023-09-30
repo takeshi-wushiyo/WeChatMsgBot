@@ -14,7 +14,7 @@ _contactRemarkY := 240 * (A_ScreenDPI / 96) ;微信联系人备注X坐标
 _contactListX := 150 * (A_ScreenDPI / 96) ;微信联系人列表X坐标
 _contactListY := 300 * (A_ScreenDPI / 96) ;微信联系人列表Y坐标
 _ahkWeChatAHKClassName := "ahk_class WeChatMainWndForPC" ;微信窗口名
-_projectUrl := "https://github.com/XgHao/WeChat-Contact" ;项目地址
+_projectUrl := "https://github.com/takeshi-wushiyo/WeChatMsgBot" ;项目地址
 ;_msExcelComObject := "Excel.Application" ;Ms Excel com object
 
 ; 自定义异常-复制文字异常
