@@ -1,0 +1,12 @@
+# 瘦身效果预览 App 依赖
+# 安装命令：pip install -r requirements_slim.txt
+
+# 核心依赖（必须）
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# 可选：摄像头拍照支持
+# opencv-python>=4.8.0
+
+# 可选：OpenAI AI 生成功能
+# openai>=1.0.0
