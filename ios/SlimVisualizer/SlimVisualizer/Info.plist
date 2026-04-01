@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Camera usage -->
+    <key>NSCameraUsageDescription</key>
+    <string>需要使用相机拍摄照片以生成瘦身效果预览。</string>
+
+    <!-- Photo library read access (PHPicker does NOT require this on iOS 14+,
+         but kept here for completeness and Save-to-Photos write permission) -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>需要访问相册以选取照片。</string>
+
+    <!-- Required for UIImageWriteToSavedPhotosAlbum -->
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>需要保存生成的瘦身效果图到相册。</string>
+
+    <key>UILaunchScreen</key>
+    <dict/>
+
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+    </dict>
+</dict>
+</plist>

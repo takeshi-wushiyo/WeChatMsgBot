@@ -73,3 +73,16 @@ python slim_visualizer.py
 - 本地处理算法使用横向收缩变换，效果基于图像几何变形，仅供参考和娱乐。
 - AI 生成功能需要 OpenAI 账户及有效的 API Key，图像将上传至 OpenAI 处理。
 - 请勿将此工具用于任何可能伤害他人自尊或引起不适的场景。
+
+---
+
+# iOS 版（ios/SlimVisualizer/）
+
+基于 **Swift 5.9 + SwiftUI** 的原生 iOS 应用，功能与 Python 桌面版相同：
+
+- 从相册选图或直接拍照
+- 5 %–50 % 瘦身幅度滑块
+- 本地 `vImage` 算法，无需联网
+- 前后对比视图 + 保存 / 分享
+
+详见 **[ios/README.md](ios/README.md)**。

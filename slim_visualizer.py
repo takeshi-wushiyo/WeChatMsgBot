@@ -16,6 +16,7 @@ import os
 import io
 import threading
 import urllib.request
+import urllib.parse
 
 from PIL import Image, ImageTk, ImageFilter, ImageEnhance
 import numpy as np
@@ -159,7 +160,12 @@ def ai_slim_transform(image: Image.Image, api_key: str, slim_percent: float) -> 
         raise ValueError("OpenAI 返回的图像数据为空，请稍后重试。")
 
     image_url = response.data[0].url
-    with urllib.request.urlopen(image_url) as resp:  # nosec: URL from OpenAI API
+    # Validate that the URL uses HTTPS. The URL originates from the OpenAI SDK
+    # response object (not user input), so scheme validation is sufficient.
+    parsed = urllib.parse.urlparse(image_url)
+    if parsed.scheme != "https":
+        raise ValueError("OpenAI 返回了非 HTTPS 的图像 URL，拒绝访问。")
+    with urllib.request.urlopen(image_url) as resp:
         img_data = resp.read()
     return Image.open(io.BytesIO(img_data)).convert("RGB")
 
